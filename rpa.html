@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPA</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#pointer-camp">Robotic Process Automation</a>
+<ul>
+<li><a href="#but-why">but why?</a></li>
+</ul>
+</li>
+<li><a href="#string-based-44">- String based (44)</a>
+<ul>
+<li><a href="#string-examination--29">String examination  (29)</a></li>
+<li><a href="#string-manipulation-9">String manipulation (9)</a></li>
+<li><a href="#string-allocation-dynamic-memory-7">String allocation (dynamic memory) (7)</a></li>
+</ul>
+</li>
+<li><a href="#array-manipulation--3">- Array Manipulation  (3)</a></li>
+<li><a href="#function-parameters-5">- Function Parameters (5)</a></li>
+<li><a href="#function-pointer-2">- Function Pointer (2)</a></li>
+<li><a href="#pds-1-practice-17">- PDS-1 Practice (17)</a>
+<ul>
+<li><a href="#cs_8251---c-programming">CS_8251 - C Programming</a></li>
+<li><a href="#cs_8391-lab-3">CS_8391 (Lab 3)</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="pointer-camp">Robotic Process Automation</h1>
+<p><strong></strong>   Pointers are <em>nothing more than memory addresses</em>, or that they allow you to point to <em>arbitrary locations</em>.</p>
+<p>Send your feedback using <a href="https://saythanks.io/to/lifebalance@gmail.com"><img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" alt="Say Thanks!"></a></p>
+<p><a href="http://j.mp/pointKITE">http://j.mp/pointKITE</a>  - the problem set that can be used for a 20-hour workshop for Quick, Deep, Immersive and Perceptual Learning of <strong>Indirection</strong> (aka Pointers) - the most important <strong>Threshold Concept</strong> in programming. Arguably, this is the largest and progressively challenging problem set (PC-P) that is relevant for learning, teaching and assessment of knowledge/competency in pointers.</p>
+<ul>
+<li>Totally new to Pointers? First go update yourself at <a href="http://j.mp/pointerGlossary">http://j.mp/pointerGlossary</a></li>
+</ul>
+<h2 id="but-why"><em>but why?</em></h2>
+<p><em>��and flight software itself� is written in C/C++� - take a look at <a href="http://j.mp/linuxFalcon">j.mp/linuxFalcon</a>!</em></p>
+<ul>
+<li>
+<p>Know <em><strong>what</strong></em> to practice</p>
+<ul>
+<li>to get better at execution, practice the same problems repeatedly over time.</li>
+</ul>
+</li>
+<li>
+<p><em>For some reason most people seem to be born without the part of the brain that understands pointers. This is an aptitude thing, not a skill thing � it requires a complex form of doubly-indirected <strong>thinking</strong> that some people just can�t do.</em> - <strong>Joel Spolsky</strong> (Founder, <a href="http://Stackoverflow.com">Stackoverflow.com</a>)</p>
+</li>
+<li>
+<p>Hot and trending languages (since 2018) like Golang and Rust are becoming popular for various reasons. Both use and implement pointer concepts.</p>
+<ul>
+<li>�For beginners, this may slightly be difficult to learn because Go relies heavily on pointers which may not be easy to grasp as a new programmer.�?�?@timcodestoo <a href="https://medium.com/p/3-programming-languages-to-learn-in-2019-2eb035936f65">https://medium.com/p/3-programming-languages-to-learn-in-2019-2eb035936f65</a></li>
+</ul>
+</li>
+<li>
+<p>One of the most practical use cases for pointers</p>
+<ul>
+<li>Three concepts - Functions from Unit_3(<code>fread</code>, <code>fwrite</code>, etc), structures from Unit_4 (<a href="http://j.mp/opaqueC">opaque</a> <code>FILE</code> typedef for<code>struct _iobuf</code>) and pointers from Unit_3 (FILE *)  come together to accomplish file processing (<a href="http://j.mp/unit5Easy">Unit_5</a>)</li>
+<li>Review <a href="http://j.mp/fileChallenge">http://j.mp/fileChallenge</a> - can you quickly write up a C code for the challenge?</li>
+</ul>
+</li>
+</ul>
+<h1 id="string-based-44">- String based (44)</h1>
+<p>A null-terminated byte string (NTBS) is a sequence of nonzero bytes followed by a byte with value <strong><code>zero</code></strong> (the terminating null character). Each byte in a byte string encodes one character of some character set. For example, the character array <code>{'\x63','\x61','\x74','\0'}</code> is an <strong>NTBS</strong> holding the string <strong>�cat�</strong> in ASCII encoding.</p>
+<h2 id="string-examination--29">String examination  (29)</h2>
+<p><em>What is inside the string? Is the needle present in the haystack?</em></p>
+<ul>
+<li><a href="http://j.mp/stringCharCC">strchar</a> and <a href="http://j.mp/stringrcharCC">strrchar</a>,  <a href="http://j.mp/stringicharCC">strichr</a> and <a href="http://j.mp/stringiRcharCC">strrichar</a>,</li>
+<li><a href="http://j.mp/stringLenCC">strlen</a>, <a href="http://j.mp/strlenCC">mystrlen</a> and <a href="https://j.mp/vowelsCC">vowel counting</a></li>
+<li><a href="http://j.mp/haveNoFive">have_no_fives</a>  and</li>
+<li><a href="http://j.mp/countCC">count_occurrences</a>, <a href="http://j.mp/uniqueCC">unique_chars</a> and</li>
+<li><a href="https://bit.ly/findEarlyCC">find_earliest</a>,  <a href="http://j.mp/countDuplicates">has_duplicates</a></li>
+</ul>
+<p>BREAK  <em>here</em> (try <strong>strlower</strong>)</p>
+<ul>
+<li><a href="http://j.mp/subSetCC">subset</a>,</li>
+<li><a href="http://j.mp/subSeqCC">subsequence</a>,</li>
+<li><a href="http://j.mp/vowelsOrderCC">vowels in order</a></li>
+<li><a href="http://j.mp/stringStrCC">strstr</a> and <a href="http://j.mp/strstrwrapCC">strstrw</a>,</li>
+<li><a href="http://j.mp/stringEndCC">strend</a>,</li>
+<li><a href="http://j.mp/strcmpCC">strcmp</a> and <a href="http://j.mp/stringncompareCC">strncmp</a></li>
+<li>strend (<em>take  2</em>)</li>
+</ul>
+<p>� BREAK  <em>here</em></p>
+<ul>
+<li><a href="http://j.mp/strpbrkCC">strpbrk</a>,</li>
+<li><a href="http://j.mp/stringcspnCC">strcspn</a>,</li>
+<li><a href="http://j.mp/stringspnCC">strspn</a>,</li>
+<li><a href="http://j.mp/strTokenizeCC">strtok</a></li>
+</ul>
+<p>� <em>BREAK here</em></p>
+<ul>
+<li><a href="http://j.mp/panGramCC">pangram</a> and <a href="http://j.mp/pangramCC">partial</a>,</li>
+<li><a href="http://j.mp/isogramCC">isogram</a> and <a href="http://j.mp/multipleIsogramCC">higher</a></li>
+<li><a href="http://j.mp/anagramCC">anagram</a></li>
+<li><a href="http://j.mp/wordcountCC">word count</a></li>
+</ul>
+<h2 id="string-manipulation-9">String manipulation (9)</h2>
+<p><em>How can I change the contents inside a string?</em></p>
+<ul>
+<li><a href="http://j.mp/strToLowerCC">strlower</a> and <a href="http://j.mp/strToUpperCC">strupper</a></li>
+<li><a href="http://j.mp/stringflipcaseCC">strflipcase</a><br>
+� BREAK <em>here</em></li>
+<li><a href="http://j.mp/stringcopyCC">strcpy</a> and <a href="http://j.mp/stringNcopyCC">strncpy</a>,</li>
+<li><a href="http://j.mp/stringCatCC">strcat</a> and <a href="http://j.mp/strncatCC">strncat</a>,</li>
+<li><a href="http://j.mp/reverseCC">strrev</a></li>
+<li><a href="http://j.mp/memmoveCC">memorymove</a></li>
+</ul>
+<h2 id="string-allocation-dynamic-memory-7">String allocation (dynamic memory) (7)</h2>
+<p><em>How do I generate new strings from existing ones?</em></p>
+<ul>
+<li><a href="http://j.mp/substringCC">subString</a>,</li>
+<li><a href="http://j.mp/indexCC">indexOf</a>,</li>
+<li><a href="http://j.mp/acronymCC">abbreviate</a> (exercism and CapGemini),</li>
+<li><a href="http://j.mp/replaceCC">replaceString</a>,</li>
+<li><a href="http://j.mp/binaryaddCC">binaryAdd</a> (CapGemini),</li>
+<li><a href="http://j.mp/centreCC">is_in_middle</a></li>
+</ul>
+<h1 id="array-manipulation--3">- Array Manipulation  (3)</h1>
+<ul>
+<li><a href="https://cloudcoder.kgkite.ac.in/cloudcoder/#exercise?c=33,p=1208">alphabets</a></li>
+<li><a href="http://j.mp/dayYearCC">day_of_year</a>  - multidimensional array 1</li>
+<li><a href="http://j.mp/arrayPointer">matrixUpdate</a> - multidimensional array 2</li>
+</ul>
+<h1 id="function-parameters-5">- Function Parameters (5)</h1>
+<ul>
+<li><a href="http://j.mp/pointerWalk">pointerWalk</a></li>
+<li><a href="http://cloudcoder.kgkite.ac.in/cloudcoder/#exercise?c=33,p=967">add_one</a></li>
+<li><a href="http://j.mp/swapNumbers">swap</a></li>
+<li><a href="http://j.mp/doubleSwap">doubleSwap</a></li>
+<li><a href="http://j.mp/dPalindromeKG">palindrome</a> using double pointers</li>
+</ul>
+<h1 id="function-pointer-2">- Function Pointer (2)</h1>
+<ul>
+<li><a href="https://j.mp/stringSortCC">string sorter</a></li>
+<li><a href="http://j.mp/funcPointerCC">case selector</a></li>
+</ul>
+<h1 id="pds-1-practice-17">- PDS-1 Practice (17)</h1>
+<h2 id="cs_8251---c-programming"><em>CS_8251</em> - C Programming</h2>
+<ul>
+<li><a href="https://j.mp/singleLL">insert_after</a></li>
+<li><a href="https://j.mp/selectSortLL">selection_sort</a></li>
+<li><a href="http://j.mp/airbnbCC">rotate list</a></li>
+<li><a href="http://j.mp/airbnb2CC">rotate_list, either way</a></li>
+<li><a href="http://j.mp/reverseLL">reverse list</a></li>
+<li><a href="https://bit.ly/reverseRangeLL">range_reverse</a></li>
+</ul>
+<h2 id="cs_8391-lab-3"><em>CS_8391</em> (Lab 3)</h2>
+<ul>
+<li><a href="http://bit.ly/connectDLL">connect</a>, <a href="http://j.mp/traverseDLL">traverse</a>, <a href="http://j.mp/tailCC">getnode</a> and<br>
+<a href="https://bit.ly/insertLinkCC">insertBefore</a></li>
+<li><a href="http://j.mp/doublyLinkedCC">Doubly-Linked List</a>
+<ul>
+<li>Processing strings as linked lists [TBD]</li>
+</ul>
+</li>
+<li>Lab 6
+<ul>
+<li><a href="https://bit.ly/arrayStack">Fixed Array based Stack</a>
+<ul>
+<li><a href="bit.ly/postfixCC">PostFix Eval</a>,  <a href="http://j.mp/infixPostfix">PostFix to Infix</a></li>
+<li><a href="http://j.mp/bracketKG">Bracket Matching</a></li>
+</ul>
+</li>
+<li><a href="http://bit.ly/linkedStack">Linked List based Stack</a></li>
+<li><a href="https://bit.ly/linkedQueue">Linked List based Queue</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+
+</html>
